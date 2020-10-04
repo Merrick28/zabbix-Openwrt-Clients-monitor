@@ -7,9 +7,8 @@
 IFS=$'\n'
 for line in $(sudo /usr/sbin/nlbw -c csv -n -g host -q|tail -n+2)
 do
-  ip=$(echo $line|awk '{print $2}')
-  hostname=$(dig -x $ip +short)
-  if [ "$ip" == "$1" ]; then
+  mac=$(echo $line|awk '{print $1}')
+  if [ "$mac" == "$1" ]; then
     if [ "$#" -eq 1 ]
     then
       echo $line

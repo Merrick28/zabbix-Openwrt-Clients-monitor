@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <zabbix_export>
     <version>5.0</version>
-    <date>2020-10-03T14:18:52Z</date>
+    <date>2020-10-04T05:47:39Z</date>
     <groups>
         <group>
             <name>Templates</name>
@@ -28,7 +28,8 @@
                     <item_prototypes>
                         <item_prototype>
                             <name>Download bytes for {#NETWORK_CLIENT}</name>
-                            <key>owrt.clients.network.detail[{#NETWORK_IP},4]</key>
+                            <key>owrt.clients.network.detail[{#MACADDR},4]</key>
+                            <delay>2m</delay>
                             <applications>
                                 <application>
                                     <name>OWRT clients data</name>
@@ -37,7 +38,8 @@
                         </item_prototype>
                         <item_prototype>
                             <name>Download packets for {#NETWORK_CLIENT}</name>
-                            <key>owrt.clients.network.detail[{#NETWORK_IP},5]</key>
+                            <key>owrt.clients.network.detail[{#MACADDR},5]</key>
+                            <delay>2m</delay>
                             <applications>
                                 <application>
                                     <name>OWRT clients data</name>
@@ -46,7 +48,8 @@
                         </item_prototype>
                         <item_prototype>
                             <name>Upload bytes for {#NETWORK_CLIENT}</name>
-                            <key>owrt.clients.network.detail[{#NETWORK_IP},6]</key>
+                            <key>owrt.clients.network.detail[{#MACADDR},6]</key>
+                            <delay>2m</delay>
                             <applications>
                                 <application>
                                     <name>OWRT clients data</name>
@@ -55,7 +58,8 @@
                         </item_prototype>
                         <item_prototype>
                             <name>Upload packets for {#NETWORK_CLIENT}</name>
-                            <key>owrt.clients.network.detail[{#NETWORK_IP},7]</key>
+                            <key>owrt.clients.network.detail[{#MACADDR},7]</key>
+                            <delay>2m</delay>
                             <applications>
                                 <application>
                                     <name>OWRT clients data</name>
