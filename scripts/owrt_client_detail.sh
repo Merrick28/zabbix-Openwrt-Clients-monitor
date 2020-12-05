@@ -5,7 +5,7 @@
 # stephane.dewitte@gmail.com
 ##########################################
 IFS=$'\n'
-for line in $(sudo /usr/sbin/nlbw -c csv -n -g host -q|tail -n+2)
+for line in $(sudo /usr/sbin/nlbw -c csv -n -g mac -q|tail -n+2)
 do
   mac=$(echo $line|awk '{print $1}')
   if [ "$mac" == "$1" ]; then
