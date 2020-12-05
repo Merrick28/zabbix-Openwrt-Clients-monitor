@@ -1,6 +1,6 @@
 ## Zabbix Opewrt Clients monitor
 
-The prupose of this repository is to allow data collector for openwrt clients. It gets download total bytes, upload total bytes, 
+The purpose of this repository is to allow data collector for openwrt clients. It gets download total bytes, upload total bytes, 
 upload total packets, et download total packets for every client.
 
 It doesn't contain any alert, the goal is only to get data, for example to create graphs.
