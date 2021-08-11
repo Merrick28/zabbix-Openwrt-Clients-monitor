@@ -22,15 +22,15 @@ do
         then
                 hostname=$(echo $nsreturn |awk '{print $4}')
         else
-                hostname=$ip
+                hostname=$mac
         fi
     # fallback if hostname is not found
     if [ -z "$hostname" ]
     then
-      hostname=$ip
+      hostname=$mac
     fi
   else
-    hostname=$ip
+    hostname=$mac
   fi
   detail="${detail}{\"{#NETWORK_CLIENT}\":\"$hostname\",\"{#MACADDR}\": \"$mac\",\"{#IPADDR}\": \"$ip\"},"
 done
