@@ -1,11 +1,13 @@
 ## Zabbix Opewrt Clients monitor
 
-The purpose of this repository is to allow data collector for openwrt clients. It gets download total bytes, upload total bytes, 
+The purpose of this repository is to allow data collector for openwrt clients, using zabbix-agent. It gets download total bytes, upload total bytes, 
 upload total packets, et download total packets for every client.
 
 It doesn't contain any alert, the goal is only to get data, for example to create graphs.
 
 ### Prerequisites
+
+You must have zabbix-agent installed and configured to be used with a zabbix server.
 
 You must have luci-app-nlbwmon and sudo installed :
 ``` 
